@@ -9,7 +9,7 @@ const puppeteer = require('puppeteer');
   });
   const page = await browser.newPage();
 
-  var pageNo = 31
+  var pageNo = 32
   for (let i = pageNo; i > 0; i--) {
     await page.goto('https://www.site-z.com/list.html?pageNo=' + i);
     const rows = await page.$$('#result > table > tbody > tr');
